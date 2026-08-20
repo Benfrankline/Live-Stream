@@ -9,10 +9,10 @@ RUN apt-get update \
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY relay/package*.json ./
 RUN npm install --omit=dev && npm cache clean --force
 
-COPY server.js ./
+COPY relay/server.js ./
 
 # Railway supplies PORT at runtime. The application listens on it.
 EXPOSE 3000
