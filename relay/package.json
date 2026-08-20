@@ -1,0 +1,17 @@
+{
+  "name": "live-stream-media-relay",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Secure FFmpeg media relay service for the Live-Stream platform.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
